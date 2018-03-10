@@ -9,7 +9,7 @@ The hub uses the LogMeIn Xively protocol to talk to the cloud, but exposes no op
 You will need: PHP and PHP_CURL.
 You will have to: edit the config.php file and enter your own login details.
 
-For sake of example, the scripts assume a single household with a single hub, a single cat flap and a single cat.
+For sake of example, the scripts assume a single household with a single hub, a single cat flap and a single cat (or dog).
 
 The scripts have various dependencies on each other, but you can do the following:
 
