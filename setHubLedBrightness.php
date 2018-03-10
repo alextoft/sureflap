@@ -31,7 +31,7 @@ $result = json_decode(curl_exec($ch),true) or die("Curl Failed\n");
 if($result['data']['led_mode']==$led) {
 	print "Successfully Set $hubname LED Brightness!\n";
 } else {
-	die("LED Brightness Change Failed!n");
+	die("LED Brightness Change Failed!\n");
 }
 
 ?>
