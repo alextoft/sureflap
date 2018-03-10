@@ -38,4 +38,3 @@ if($result['data']['locking']==$lock) {
 }
 
 ?>
-
