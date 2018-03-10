@@ -6,6 +6,7 @@ $ch = curl_init($endpoint."/api/household/$household/device");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array("Authorization: Bearer $token"));
 $result = json_decode(curl_exec($ch),true) or die("Curl Failed\n");
+
 if($result['data']) {
 	foreach($result['data'] as $foo) {
 		print "Device ID: ".$foo['id']."\n";
@@ -42,4 +43,3 @@ if($result['data']) {
 }
 
 ?>
-
