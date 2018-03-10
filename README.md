@@ -4,7 +4,7 @@ Linkage: https://www.surepetcare.com/en-gb/pet-doors/microchip-pet-door-connect
 
 I have one of those posh IoT cat flaps, but the provided apps don't always float my boat. With a little tinkering I've managed to document most of the REST API used behind the scenes. This repo provides some very basic examples of how to talk to the API in order to retrieve data and set configuration.
 
-The hub uses the LogMeIn Xively protocol over HTTPS to talk to the cloud, but is not [obviously] vulnerable to any kind of MiTM attack and it exposes no open ports whatsoever on the LAN. My plan is to buy a spare, hopefully jailbreak it, then modify such as to enable push notifications without being dependent on the cloud - but until then it's possible to implement a poor-man's alternative by polling the cloud for events. Push is obviously better, but if you can handle a few seconds lag an IFTTT approach is still feasible.
+The hub uses the LogMeIn Xively protocol over HTTPS to talk to the cloud, but is not [obviously] vulnerable to any kind of MiTM attack and exposes no open ports whatsoever on the LAN. My plan is to buy a spare, hopefully jailbreak it, then modify such as to enable push notifications without being dependent on the cloud - but until then it's possible to implement a poor-man's alternative by polling the cloud for events. Push is obviously better, but if you can handle a few seconds lag an IFTTT approach is still feasible.
 
 You will need: PHP and PHP_CURL.
 You will have to: edit the config.php file and enter your own login details.
