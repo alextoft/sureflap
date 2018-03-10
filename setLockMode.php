@@ -3,6 +3,7 @@
 if(!$argv[1]) {
 	die("Usage: php ".$_SERVER['PHP_SELF']." [in|out|both|none]\n");
 }
+
 switch($argv[1]) {
 	case "in":
 		$lock = 2;
@@ -29,6 +30,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json","Content-Length: ".strlen($json),"Authorization: Bearer $token"));
 $result = json_decode(curl_exec($ch),true) or die("Curl Failed\n");
+
 if($result['data']['locking']==$lock) {
 	print "Successfully Set \"$flapname\" Lock Mode!\n";
 } else {
