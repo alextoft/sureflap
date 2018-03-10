@@ -18,4 +18,3 @@ if($result['data']) {
 print "\n";
 
 ?>
-
