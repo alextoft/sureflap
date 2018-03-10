@@ -6,6 +6,7 @@ $ch = curl_init($endpoint."/api/household/$household/pet");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array("Authorization: Bearer $token"));
 $result = json_decode(curl_exec($ch),true) or die("Curl Failed\n");
+
 if($result['data']) {
 	print "Pet ID: ".$result['data'][0]['id']."\n";
 	$pet = $result['data'][0]['id'];
