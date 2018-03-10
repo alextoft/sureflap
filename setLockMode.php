@@ -34,7 +34,7 @@ $result = json_decode(curl_exec($ch),true) or die("Curl Failed\n");
 if($result['data']['locking']==$lock) {
 	print "Successfully Set \"$flapname\" Lock Mode!\n";
 } else {
-	die("Lock Mode Change Failed!n");
+	die("Lock Mode Change Failed!\n");
 }
 
 ?>
