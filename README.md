@@ -11,28 +11,28 @@ For sake of example, the scripts assume a single household with a single hub, a 
 
 The scripts have various dependencies on each other, but you can do the following:
 
-php login.php
+####php login.php
 (does what it says on the tin - does a login and retrieves a session token)
 
-php getHousehold.php
+####php getHousehold.php
 (calls login.php, then displays details of the household)
 
-php getPet.php
+####php getPet.php
 (calls getHousehold.php, then displays details of the pet registered to that household)
 
-php getPetLocation.php
+####php getPetLocation.php
 (calls getPet.php, then displays the pet's current location)
 
-php getDevices.php
+####php getDevices.php
 (calls getHousehold, then displays information for devices at the household)
 
-php getCurfewStatus.php
+####php getCurfewStatus.php
 (calls getDevices.php, then displays current curfew status - with times if enabled)
 
-php setLockMode.php in|out|both|none
+####php setLockMode.php in|out|both|none
 (calls getDevices.php, then sets the lock mode of the flap)
 
-php setHubLedBrightness.php bright|dim|off
+####php setHubLedBrightness.php bright|dim|off
 (calls getDevices.php, then sets the LED brightness of the "ears" on the hub.
 
 More to come.
