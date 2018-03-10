@@ -35,7 +35,7 @@ The scripts have various dependencies on each other, but you can do the followin
 (calls getDevices.php, then sets the lock mode of the flap)
 
 #### php setHubLedBrightness.php bright|dim|off
-(calls getDevices.php, then sets the LED brightness of the "ears" on the hub.
+(calls getDevices.php, then sets the LED brightness of the "ears" on the hub)
 
-More to come. Please don't piss and moan about the quality of the code - it's a Saturday afternoon hack over a few beers.
+Plenty more to come. Please don't piss and moan about the quality of the code - it's a Saturday afternoon hack over a few beers.
 
