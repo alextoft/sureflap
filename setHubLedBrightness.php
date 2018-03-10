@@ -35,4 +35,3 @@ if($result['data']['led_mode']==$led) {
 }
 
 ?>
-
