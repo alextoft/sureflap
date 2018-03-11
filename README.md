@@ -26,7 +26,7 @@ The scripts have various dependencies on each other, but you can do the followin
 (calls getPet.php, then displays the pet's current location)
 
 #### php getDevices.php
-(calls getHousehold, then displays information for devices at the household)
+(calls getHousehold.php, then displays information for devices at the household)
 
 #### php getCurfewStatus.php
 (calls getDevices.php, then displays current curfew status - with times if enabled)
