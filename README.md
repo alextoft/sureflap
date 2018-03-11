@@ -38,7 +38,7 @@ The scripts have various dependencies on each other, but you can do the followin
 (calls getDevices.php, then sets the LED brightness of the "ears" on the hub)
 
 #### php setEnableCurfew.php lockTime unlockTime (eg. 18:00 06:30)
-(calls getDevices.php, then enables curfew mode between the lockTime and unlockTime specified - NB: if you change the curfew times when a curfew is in force and the flap is locked, the flap will unlock if the current time is outside those you specified)
+(calls getDevices.php, then enables curfew mode between the lockTime and unlockTime specified - NB: if you change the curfew times when a curfew is in force and the flap is locked, the flap will unlock if the current time is outside those specified)
 
 Plenty more to come, but please don't piss and moan about the quality of the code - it was a Saturday afternoon hack over a few beers.
 
