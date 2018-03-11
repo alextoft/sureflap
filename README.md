@@ -42,5 +42,4 @@ The scripts have various dependencies on each other, but you can do the followin
 
 Plenty more to come, but please don't piss and moan about the quality of the code - it was a Saturday afternoon hack over a few beers.
 
-I have no connection with SureFlap except for having used their products for a very long time; they do what it says on the tin and the after-sales support is bulletproof. My old, non-IoT cat flap developed a fault after years of weather exposure and abuse by a pair of nutter cats, but after one phone call they sent me a part with idiot-proof fitting instructions and it was good as new. Difficult to fault that level of service.
-
+I have no connection with SureFlap except for having used their products for a very long time; they do what it says on the tin and the after-sales support is exceptional. My old, non-IoT cat flap developed a fault after years of weather exposure and abuse by a pair of nutter cats, but after one phone call they sent me a part with idiot-proof fitting instructions and it was good as new. Difficult to fault that level of service.
