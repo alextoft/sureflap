@@ -15,10 +15,9 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json","Con
 $result = json_decode(curl_exec($ch),true) or die("Curl Failed\n");
 
 if($result['data']['curfew']['enabled']==true) {
-	print "Successfully Enabled Curfew For \"$flapname\" between $argv[1] and $argv[2]\n";
+	print "Successfully Enabled Curfew For \"$flapname\" Between $argv[1] & $argv[2]\n";
 } else {
 	die("Enable Curfew Failed!\n");
 }
 
 ?>
-
