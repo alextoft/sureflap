@@ -7,7 +7,7 @@ I have one of those posh IoT cat flaps, but the provided apps don't always float
 The hub uses the LogMeIn Xively protocol over HTTPS to talk to the cloud, but is not [obviously] vulnerable to any kind of MiTM attack and exposes no open ports whatsoever on the LAN. I've managed to get hold of a spare hub, but not done anything with it yet. It's all Microchip stuff, based around a 32bit/80MHz PIC32MX695F MIPS SoC with 512KB flash, 128KB RAM, 10/100 Ethernet and USB2 OTG. Also on the board are a WRF24J48MA 2.4GHz wireless module (to communicate with the flap) and obligatory ENC424J600 Ethernet controller to manage it. The PCB appears to have an 8-pin FPC serial connector and JTAG interface which both look promising. Having said that, if it's possible to discover details of the wireless connection between hub and flap then a pure software implementation of the hub could be achievable.
 
 You will need: PHP and PHP_CURL.
-You will have to: edit the config.php file and enter your own login details.
+You will have to: copy config.php.dist file to config.php and enter your own login details.
 
 For sake of example, the scripts assume a single household with a single hub, a single flap and a single cat (or dog).
 
