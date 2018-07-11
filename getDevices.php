@@ -21,8 +21,8 @@ if($result['data']) {
                                 break;
                         case 3:
                                 print "Device Type: Pet Door Connect\n";
-																$flap = $foo['id'];
-																$flapname = $foo['name'];
+				$flap = $foo['id'];
+				$flapname = $foo['name'];
                                 break;
                         case 4:
                                 print "Device Type: Pet Feeder Connect\n";
@@ -32,8 +32,8 @@ if($result['data']) {
                                 break;
                         case 6:
                                 print "Device Type: DualScan Cat Flap Connect\n";
-																$flap = $foo['id'];
-																$flapname = $foo['name'];
+				$flap = $foo['id'];
+				$flapname = $foo['name'];
                                 break;
 		}
 		print "Device Name: ".$foo['name']."\n";
