@@ -5,7 +5,6 @@ if(!$oldtoken) {
 }
 
 $ch = curl_init($endpoint."/api/auth/logout");
-curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json","Authorization: Bearer $oldtoken"));
 $result = curl_exec($ch);
