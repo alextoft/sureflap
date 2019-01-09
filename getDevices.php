@@ -32,6 +32,8 @@ if($result['data']) {
                                 break;
                         case 6:
                                 print "Device Type: DualScan Cat Flap Connect\n";
+				$flap = $foo['id'];
+				$flapname = $foo['name'];
                                 break;
 		}
 		print "Device Name: ".$foo['name']."\n";
