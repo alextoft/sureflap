@@ -25,6 +25,9 @@ The scripts have various dependencies on each other, but you can do the followin
 #### php getPetLocation.php
 (calls getPet.php, then displays the pet's current location)
 
+#### php setPetLocation.php 1|2 (1 == inside, 2 == outside)
+(calls getPet.php, then updates location with current timestamp)
+
 #### php getDevices.php
 (calls getHousehold.php, then displays information for devices at the household)
 
