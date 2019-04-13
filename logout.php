@@ -10,9 +10,9 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json","Aut
 $result = curl_exec($ch);
 
 if(curl_getinfo($ch, CURLINFO_HTTP_CODE)=="200") {
-	print "Success!\n";
+	print_if_needed("Success!\n",$suppression);
 } else {
-	print "Token Invalid/Expired!\n"; // Probably...
+	print_if_needed("Token Invalid/Expired!\n",$suppression); // Probably...
 }
 
 ?>
