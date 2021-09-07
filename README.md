@@ -43,6 +43,12 @@ The scripts have various dependencies on each other, but you can do the followin
 #### php setEnableCurfew.php lockTime unlockTime (eg. 18:00 06:30)
 (calls getDevices.php, then enables curfew mode between the lockTime and unlockTime specified - NB: if you change the curfew times when a curfew is in force and the flap is locked, the flap will unlock if the current time is outside those specified)
 
+#### php getPets.php
+(calls getHousehold.php, then retrieves all pets associated with the household and stores them in an array for future use. Lists each pet's ID and name.)
+
+#### php whereIs.php?name=MrPusscats
+(calls getPets.php, then outputs a JSON formatted message for the location of the pet)
+
 Plenty more to come, but please don't piss and moan about the quality of the code - it was a Saturday afternoon hack over a few beers.
 
 I have no connection with SureFlap except for having used their products for a very long time; they do what it says on the tin and the after-sales support is exceptional. My old, non-IoT cat flap developed a fault after years of weather exposure and abuse by a pair of nutter cats, but after one phone call they sent me a part with idiot-proof fitting instructions and it was good as new. Difficult to fault that level of service.

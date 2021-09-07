@@ -8,7 +8,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array("Authorization: Bearer $token"));
 $result = json_decode(curl_exec($ch),true) or die("Curl Failed\n");
 
 if($result['data']) {
-	print "Household ID: ".$result['data'][0]['id']."\nHousehold Name: ".$result['data'][0]['name']."\n";
+	print_if_needed("Household ID: ".$result['data'][0]['id']."\nHousehold Name: ".$result['data'][0]['name']."\n",$suppression);
 	$household = $result['data'][0]['id'];
 } else {
 	die("No Household!\n");
