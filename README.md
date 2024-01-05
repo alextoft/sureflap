@@ -1,4 +1,13 @@
-Folks - my apologies for not checking in and noticing there were pull requests, I honestly didn't expect that! Better late than never.
+This repo should be regarded as somewhat old at this point. There are a couple of elements (probably more) to note.
+
+**FIRST**
+You need to send an accepted user agent in your curl commands. I suspect this is a deliberate door slam.
+
+**SECOND**
+You can no longer use $endpoint."/api/pet/$pet/position" in getPetLocation.php and must instead use $endpoint."/api/pet" and parse out the element for the desired Pet.
+
+**THIRD**
+There is a change in the curfew API, but I don't currently have time to look at it :(
 
 # SureFlap Cloud API Examples
 
