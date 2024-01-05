@@ -1,7 +1,7 @@
 This repo should be regarded as somewhat old at this point. There are a couple of elements (probably more) to note.
 
 **FIRST**
-You need to send an accepted user agent in your curl commands. I suspect this is a deliberate door slam.
+You need to send an accepted User-Agent header in your curl commands. I suspect this is a deliberate door slam.
 
 **SECOND**
 You can no longer use $endpoint."/api/pet/$pet/position" in getPetLocation.php and must instead use $endpoint."/api/pet" and parse out the element for the desired Pet.
